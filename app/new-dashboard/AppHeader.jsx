@@ -10,7 +10,7 @@ export function AppHeader() {
         <Link href="/">
           {/* Adjust the src to match your actual logo file in /public/images/ */}
           <Image
-            src="/PGU-logo-full.PNG"
+            src="/PGU-logo-full.png"
             alt="Alpha Dog Agency"
             width={420}
             height={100}

@@ -48,8 +48,8 @@ export default function LoginPage() {
       <div className="w-full max-w-md">
         <div className="flex justify-center mb-8">
           <Image
-            src="/PGU-logo.PNG"
-            alt="Alpha Dog Agency"
+            src="/PGU-logo.png"
+            alt="Point Guard University"
             width={240}
             height={100}
             className="h-auto"
