@@ -18,7 +18,7 @@ const twilio_phone_number = process.env.TWILIO_PHONE_NUMBER;
 const client = twilio(accountSid, authToken);
 
 // Define baseUrl so it always includes the protocol.
-const baseUrl = "https://9c3b-69-174-154-43.ngrok-free.app";
+const baseUrl = "https://pgu-ai.vercel.app";
 
 export async function POST(req) {
   try {
