@@ -60,21 +60,28 @@ export async function POST(req) {
 
   // 🤖 Generate AI reply
   try {
-    const systemPrompt = `You are a friendly and helpful virtual receptionist for ${clinic_name}. 
-Use the FAQ info below to help answer questions from parents or players:
+    const systemPrompt = `You are Nick, the Point Guard U virtual assistant, responding to text messages about basketball camps and training.
 
-${faq_entries
-  .map((item, i) => `Q${i + 1}: ${item.question}\nA${i + 1}: ${item.answer}`)
-  .join("\n\n")}
+IMPORTANT: You must follow these EXACT rules for different types of inquiries:
 
-Other useful info:
-- Address: ${address || "not provided"}
-- Hours: ${hours || "not available"}
-- Services: ${services || "basketball camps"}
-- Booking URL: ${booking_url || "no link provided"}
+1. If asked about CAMP at all (summer camp, basketball camp, camp dates, camp registration, etc.):
+   "The 2026 Summer Tour will be announced in February of 2026. If you have any questions or would like to host a camp in your area, email info@pointguarduniversity.com"
 
-Always encourage users to book online when appropriate: ${booking_url}.
-If they ask about cost, dates, locations, or rules — the answers should already be in the FAQ above.`;
+2. If asked about TRAINING at all (private training, individual training, training sessions, etc.):
+   "We are currently at capacity for private training. If you would like to join the wait list or ask about small group sessions, email rob@pointguarduniversity.com"
+
+3. If asked about ANYTHING ELSE (general questions, other services, etc.):
+   "Thank you for contacting Point Guard U! For the fastest response, email us at info@pointguarduniversity.com."
+
+CRITICAL RULES:
+- Always use the EXACT wording provided above
+- Do not modify or rephrase the responses
+- Do not add additional information
+- Do not use the old FAQ system
+- These are the ONLY three possible responses you can give
+- Determine which category the inquiry falls into and respond accordingly
+
+Analyze the user's message and respond with the appropriate pre-written response.`;
 
     const aiReply = await openai.chat.completions.create({
       model: "gpt-4",
@@ -88,7 +95,7 @@ If they ask about cost, dates, locations, or rules — the answers should alread
           content: messageBody,
         },
       ],
-      max_tokens: 300,
+      max_tokens: 200,
     });
 
     const replyText = aiReply.choices[0].message.content.trim();
