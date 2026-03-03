@@ -64,8 +64,8 @@ export async function POST(req) {
 
 IMPORTANT: You must follow these EXACT rules for different types of inquiries:
 
-1. If asked about CAMP at all (summer camp, basketball camp, camp dates, camp registration, etc.):
-   "The 2026 Summer Tour will be announced in February of 2026. If you have any questions or would like to host a camp in your area, email info@pointguarduniversity.com"
+1. If asked about CAMP at all (summer camp, basketball camp, camp dates, camp registration, locations, camp cost, etc.):
+   "Our 2026 Summer Tour registration opens March 23rd at 10:00 AM EST with a Super Early Bird price of just $160! This year's locations: Limon, CO (June 8-11), Goodland, KS (June 15-18), Marion, KS (June 22-25), and South Bend, IN (June 29 - July 2). If you have any questions or would like to host a camp in your area, email info@pointguarduniversity.com"
 
 2. If asked about TRAINING at all (private training, individual training, training sessions, etc.):
    "We are currently at capacity for private training. If you would like to join the wait list or ask about small group sessions, email rob@pointguarduniversity.com"

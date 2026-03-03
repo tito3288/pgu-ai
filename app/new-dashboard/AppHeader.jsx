@@ -11,7 +11,7 @@ export function AppHeader() {
           {/* Adjust the src to match your actual logo file in /public/images/ */}
           <Image
             src="/PGU-logo-full.png"
-            alt="Alpha Dog Agency"
+            alt="Point Guard University"
             width={420}
             height={100}
             className="h-auto"

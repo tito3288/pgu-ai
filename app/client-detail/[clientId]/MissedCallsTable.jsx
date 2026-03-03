@@ -216,7 +216,7 @@ export default function MissedCallsTable({ missedCalls }) {
                                       }`}
                                     >
                                       <div className="text-muted-foreground text-xs mb-1">
-                                        {msg.from === "user" ? "Patient" : "AI"}
+                                        {msg.from === "user" ? "Caller" : "PGU AI"}
                                       </div>
                                       <div>{msg.message}</div>
                                       <div className="text-xs text-muted-foreground mt-1">
@@ -266,7 +266,7 @@ export default function MissedCallsTable({ missedCalls }) {
                       }`}
                     >
                       <div className="text-muted-foreground text-xs mb-1">
-                        {msg.from === "user" ? "Patient" : "Alpha Dog AI"}
+                        {msg.from === "user" ? "Caller" : "PGU AI"}
                       </div>
                       <div>{msg.message}</div>
                       <div className="text-xs text-muted-foreground mt-1">

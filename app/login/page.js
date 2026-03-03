@@ -63,8 +63,7 @@ export default function LoginPage() {
               Login to Dashboard
             </CardTitle>
             <CardDescription className="text-center">
-              Enter your credentials to access Alpha Dog&apos;s dental marketing
-              dashboard
+              Enter your credentials to access the Point Guard U dashboard
             </CardDescription>
           </CardHeader>
           <CardContent>

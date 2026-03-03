@@ -46,8 +46,7 @@ export default function ResetPasswordPage() {
               Reset Password
             </CardTitle>
             <CardDescription className="text-center">
-              Enter your credentials to access Alpha Dog&apos;s dental marketing
-              dashboard
+              Enter your email to reset your Point Guard U dashboard password
             </CardDescription>
           </CardHeader>
 

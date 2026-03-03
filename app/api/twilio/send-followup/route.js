@@ -60,6 +60,13 @@ OUR IMPACT:
 - We’ve helped over 250 athletes attend camps they couldn’t otherwise afford—thanks to our sponsors.
 - We host free clinics in Kansas, Indiana, and Chicago each winter.
 - We give back thousands of dollars annually to local athletic clubs, schools, and communities.
+
+2026 SUMMER TOUR:
+- Registration opens March 23rd at 10:00 AM EST — Super Early Bird price: $160
+- Limon, CO — June 8-11
+- Goodland, KS — June 15-18
+- Marion, KS — June 22-25
+- South Bend, IN — June 29 - July 2
 `;
 
 export async function POST(req) {
@@ -120,8 +127,8 @@ export async function POST(req) {
         - Be very brief and natural, like texting a parent.
         - Write in 1–2 short sentences max.
         - Never say "amazing" or use overly cheesy words.
-        - Focus on the 2026 Summer Tour announcement in February 2026.
-        - Mention that if they have questions or want to host a camp, they should email info@pointguarduniversity.com.
+        - Let them know our 2026 Summer Tour registration opens March 23rd at 10:00 AM EST with a Super Early Bird price of just $160.
+        - If they need immediate assistance, tell them to email info@pointguarduniversity.com.
         - Don't mention private training unless asked.
         - Don't apologize for the missed call — be upbeat and helpful.
         - Never write long paragraphs.`,
@@ -129,7 +136,7 @@ export async function POST(req) {
           {
             role: "user",
             content:
-              "The parent called but missed us. Send a short follow-up message about the 2026 Summer Tour announcement.",
+              "The parent called but missed us. Send a short follow-up message about the 2026 Summer Tour registration opening March 23rd.",
           },
         ],
         max_tokens: 100,
