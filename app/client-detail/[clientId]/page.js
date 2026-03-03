@@ -1,7 +1,7 @@
 "use client";
 import { useParams } from "next/navigation";
 import ClientDetailView from "./ClientDetailView";
-import { AppHeader } from "/app/new-dashboard/AppHeader";
+import { AppHeader } from "../../new-dashboard/AppHeader";
 
 export default function ClientDetailPage() {
   const { clientId } = useParams();
