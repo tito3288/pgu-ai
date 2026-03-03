@@ -71,6 +71,12 @@ export default function ClientDetailView({ clientId }) {
           });
         });
 
+        calls.sort((a, b) => {
+          const timeA = a.timestamp?.seconds ?? 0;
+          const timeB = b.timestamp?.seconds ?? 0;
+          return timeB - timeA; // newest first
+        });
+
         setMissedCalls(calls);
       } catch (error) {
         console.error("Error fetching client or missed calls:", error);

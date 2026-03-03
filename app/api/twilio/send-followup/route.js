@@ -127,7 +127,7 @@ export async function POST(req) {
         - Be very brief and natural, like texting a parent.
         - Write in 1–2 short sentences max.
         - Never say "amazing" or use overly cheesy words.
-        - Let them know our 2026 Summer Tour registration opens March 23rd at 10:00 AM EST with a Super Early Bird price of just $160.
+        - Let them know our 2026 Summer Tour registration opens March 23rd at 10:00 AM EST.
         - If they need immediate assistance, tell them to email info@pointguarduniversity.com.
         - Don't mention private training unless asked.
         - Don't apologize for the missed call — be upbeat and helpful.
